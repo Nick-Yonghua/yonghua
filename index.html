@@ -15,18 +15,21 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
             padding: 50px 0;
-            background-color: #4CAF50;
+            background-color: #007bff;
             color: white;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
+        }
+        header img {
+            max-width: 100px;
         }
         .content {
             padding: 20px;
@@ -39,13 +42,32 @@
             color: #666;
             line-height: 1.6;
         }
-        .contact-info {
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-top: 20px;
+        }
+        .service {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .service img {
+            width: 50%;
+            height: auto;
+        }
+        .service div {
+            width: 50%;
+            padding: 20px;
+        }
+        .service:nth-child(even) {
+            flex-direction: row-reverse;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4CAF50;
+            background-color: #007bff;
             color: white;
         }
         .social-media {
@@ -58,6 +80,7 @@
 </head>
 <body>
     <header>
+        <img src="path_to_logo.jpg" alt="Yonghua Finance Logo">
         <h1>Yonghua Finance</h1>
     </header>
     <div class="container">
@@ -66,32 +89,52 @@
             <p>Welcome to Yonghua Finance. We are dedicated to providing top-notch financial services to help you manage your finances efficiently and effectively. Our team of experienced accountants is here to assist you with all your accounting needs, from tax preparation to financial planning.</p>
             
             <h2>Our Services</h2>
-            <h3>Accounting Service</h3>
-            <ul>
-                <li>Book keeping and cloud accounting</li>
-                <li>Payroll management and auto enrolment</li>
-                <li>VAT services and Management accounting</li>
-                <li>Financial accounting</li>
-            </ul>
-            <h3>Business Services</h3>
-            <ul>
-                <li>Business incorporation; start-ups; company secretarial services; and Expert witness</li>
-            </ul>
-            <h3>Consulting Services</h3>
-            <ul>
-                <li>Business plan; Cash flow; independent advice; and other adhoc services</li>
-            </ul>
+            <div class="services">
+                <div class="service">
+                    <img src="path_to_image1.jpg" alt="Accounting Image">
+                    <div>
+                        <h3>Accounting Service</h3>
+                        <ul>
+                            <li>Book keeping and cloud accounting</li>
+                            <li>Payroll management and auto enrolment</li>
+                            <li>VAT services and Management accounting</li>
+                            <li>Financial accounting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="path_to_image2.jpg" alt="Business Services Image">
+                    <div>
+                        <h3>Business Services</h3>
+                        <ul>
+                            <li>Business incorporation</li>
+                            <li>Start-ups</li>
+                            <li>Company secretarial services</li>
+                            <li>Expert witness</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="path_to_image3.jpg" alt="Consulting Services Image">
+                    <div>
+                        <h3>Consulting Services</h3>
+                        <ul>
+                            <li>Business plan</li>
+                            <li>Cash flow</li>
+                            <li>Independent advice</li>
+                            <li>Other adhoc services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             
             <div class="contact-info">
                 <h2>Contact Us</h2>
                 <p>Address: 124 City Road, London, EC1V 2NX</p>
                 <p>Telephone: +44 203488 3567</p>
                 <p>Email: <a href="mailto:info@yonghua.co.uk">info@yonghua.co.uk</a></p>
-                
-                <div class="social-media">
-                    <p>Wechat: Yonghuafinance</p>
-                    <p>Twitter: <a href="https://twitter.com/Yonghuafinance" target="_blank">@Yonghuafinance</a></p>
-                </div>
+                <p>Wechat: Yonghuafinance</p>
+                <p>Twitter: <a href="https://twitter.com/Yonghuafinance" target="_blank">@Yonghuafinance</a></p>
             </div>
         </div>
     </div>
